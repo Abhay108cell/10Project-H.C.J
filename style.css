@@ -18,3 +18,26 @@ body{
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   border: 2px solid #ff85c0;
 }
+
+h1{
+  color: #ff85c0;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.love-calculator{
+margin-top: 20px;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"]{
+  width: 95%;
+padding: 10px;
+margin-top: 10px;
+color: #ff85c0;
+}
+
