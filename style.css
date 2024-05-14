@@ -17,6 +17,7 @@ body{
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   border: 2px solid #ff85c0;
+  text-align: center;
 }
 
 h1{
@@ -41,3 +42,18 @@ margin-top: 10px;
 color: #ff85c0;
 }
 
+button{
+  background-color: #ff85c0;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result{
+  margin-top: 10px;
+  font-size: 22px;
+  color: #ff85c0;
+}
