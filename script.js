@@ -12,15 +12,9 @@ function calculateLove(){
       result.innerHTML += "<br> Not a Great Match. Keep Looking!"
     } else if (lovePercentage >= 30 && lovePercentage <70){
       result.innerHTML += "<br> There is a Potential. Keep Try!"
-    } else if (lovePercentage > 85) {
+    } else if (lovePercentage >85) {
       result.innerHTML += "<br> Great Match. Love is in The Air!"
-    } else{
-      result.innerHTML += "<br> You Both are SoulMates"
     }
-      
-
-
-
   }
 
 }
