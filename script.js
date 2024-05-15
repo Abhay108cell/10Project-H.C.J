@@ -7,6 +7,7 @@ function calculateLove(){
   } else{
     const lovePercentage = Math.floor(Math.random()*100+1)
     const result = document.getElementById("result")
+    result.innerHTML = `${name1} and ${name2} 's Love Percentage: ${lovePercentage}`
   }
 
 }
