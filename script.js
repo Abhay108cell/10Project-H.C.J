@@ -9,3 +9,4 @@ const heightInches = parseInt(document.getElementById("Height-inches").value)
 const weight = parseFloat(document.getElementById("weight-kgs").value)
 
 })
+
