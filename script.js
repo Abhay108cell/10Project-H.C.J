@@ -14,4 +14,14 @@ const totalPayment = loanAmount;
 const montlyPayment = (loanAmount * montlyInterest)/(1-Math.pow(1+montlyInterest, -totalPayment))
 const totalInterest = (montlyPayment * totalPayment) - loanAmount
 
+displayResult(montlyPayment,totalInterest)
+
+function displayResult (montlyPayment,totalInterest){
+  const resultDiv = document.getElementById('result')
+  resultDiv.innerHTML = `
+ <p><strong>Monthly Payment:${montlyPayment.toFixed(2)}</p></strong>
+ <p><strong>Monthly Interest:${totalInterest.toFixed(2)}</p></strong>
+  `
+}
+
 }
