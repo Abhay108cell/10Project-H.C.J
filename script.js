@@ -19,8 +19,11 @@ updateCounterDisplay();
 }
 
 function decrementCounter(){
-countervalue--;
-updateCounterDisplay();
+  if(countervalue>0){
+    countervalue--;
+    updateCounterDisplay();
+
+  }
 }
 
 function resetCounter(){
