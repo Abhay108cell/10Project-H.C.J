@@ -4,10 +4,19 @@ function isPalindrome(str){
   console.log(cleanStr);
   const reversedStr = cleanStr.split('').reverse().join('');
   console.log(reversedStr);
+ 
+return cleanStr === reversedStr;
 
 }
 
 function palindromeChecker(){
+
+const inputText =document.getElementById('inputText')
+const inputResult =document.getElementById('result')
+
+if(isPalindrome(inputText.value)){
+  
+}
 
 }
 
