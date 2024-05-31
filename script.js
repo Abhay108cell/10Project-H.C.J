@@ -1,0 +1,1 @@
+document.getElementById('checkButton').addEventListener('click',palindromeChecker)
