@@ -12,12 +12,16 @@ return cleanStr === reversedStr;
 function palindromeChecker(){
 
 const inputText =document.getElementById('inputText')
-const inputResult =document.getElementById('result')
+const result = document.getElementById('result')
 
 if(isPalindrome(inputText.value)){
+  result.textContent = `"${inputText.value}" is a Palindrome`;
+} else{
   
+  result.textContent = `"${inputText.value}" is not a Palindrome`;
 }
-
+result.classList.add('fadeIn');
+inputText.value = "";
 }
 
 document.getElementById('checkButton').addEventListener('click',palindromeChecker)
