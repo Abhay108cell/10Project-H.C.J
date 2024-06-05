@@ -12,9 +12,9 @@ const copyButton = document.getElementById('copyButton');
 const InputTypeRGBValue = document.getElementById('inputType');
 
 
-redSlider.addEventListener('click',updateColor);
-greenSlider.addEventListener('click',updateColor);
-blueSlider.addEventListener('click',updateColor);
+redSlider.addEventListener('input',updateColor);
+greenSlider.addEventListener('input',updateColor);
+blueSlider.addEventListener('input',updateColor);
 copyButton.addEventListener('click',copyRGBColor);
 
 function updateColor(){
@@ -22,9 +22,14 @@ function updateColor(){
     const greenValue = greenSlider.value;
     const blueValue = blueSlider.value;
 
-    console.log(redValue,greenValue,blueValue);
-}
+    // console.log(redValue,greenValue,blueValue);
 
+    const rgbColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`
+    // console.log(rgbColor);
+
+    colorBox.style.background = rgbColor;
+}
+//  updateColor();
 
 function copyRGBColor(){
 
