@@ -18,8 +18,13 @@ blueSlider.addEventListener('click',updateColor);
 copyButton.addEventListener('click',copyRGBColor);
 
 function updateColor(){
+    const redValue = redSlider.value;
+    const greenValue = greenSlider.value;
+    const blueValue = blueSlider.value;
 
+    console.log(redValue,greenValue,blueValue);
 }
+
 
 function copyRGBColor(){
 
