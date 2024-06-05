@@ -38,5 +38,19 @@ function updateColor(){
 //  updateColor();
 
 function copyRGBColor(){
+     
+  const redValue = redSlider.value;
+  const greenValue = greenSlider.value;
+  const blueValue = blueSlider.value;
 
+
+  const rgbColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
+
+  navigator.clipboard.writeText(rgbColor)
+  .then(()=>{
+       alert("RGB Color Value Copied to Clipboard:" + rgbColor)
+  })
+.catch((error)=>{
+  console.error("Failed to Copy RGB  Values", error);
+})
 }
