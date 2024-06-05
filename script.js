@@ -28,6 +28,12 @@ function updateColor(){
     // console.log(rgbColor);
 
     colorBox.style.background = rgbColor;
+
+    redValueSpan.textContent = redValue;
+    greenValueSpan.textContent = greenValue;
+    blueValueSpan.textContent = blueValue;
+
+    InputTypeRGBValue.textContent = rgbColor;
 }
 //  updateColor();
 
