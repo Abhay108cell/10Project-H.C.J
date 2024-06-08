@@ -47,3 +47,8 @@ h1{
 .input-group select{
   width: 100%;
 }
+
+.input-group input::-webkit-outer-spin-button,
+.input-group input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
