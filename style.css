@@ -72,5 +72,20 @@ h1{
 }
 
 .result div{
-  
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+#calculateBtn{
+padding: 12px 20px;
+background-color: #c50752;
+border-radius: 5px;
+border: none;
+color: #ffffff;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#calculateBtn:hover{
+  background-color: #53031b;
 }
