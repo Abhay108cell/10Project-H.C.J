@@ -13,7 +13,17 @@ const billAmount = parseFloat(billAmountInput.value);
 const serviceRating = parseFloat(serviceRatingSelect.value);
 const splitCount = parseInt(splitCountInput.value);
 const mealType = mealTypeSelect.value;
+
+
+if(isNaN(billAmount) || isNaN(serviceRating) || isNaN(splitCount)){
+  tipAmountOutput.textContent = "Please Enter Valid Number";
+  totalAmountOutput.textContent = "";
+  amountPerPersonOutput.textContent = "";
+  return;
 }
+
+}
+
 
 
 document.getElementById('calculateBtn').addEventListener("click", calculateTip)
