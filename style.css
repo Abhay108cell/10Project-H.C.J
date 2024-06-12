@@ -4,3 +4,21 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+body{
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 100vh; 
+}
+
+.container{
+  width: 35.87em;
+  display: grid;
+  color: #ffffff;
+  align-items: center;
+  grid-template-columns: 8fr 4fr;
+  background-color: #1e90ff;
+  border-radius: 0.5em;
+}
