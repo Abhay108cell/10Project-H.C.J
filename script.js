@@ -1,0 +1,1 @@
+let dateContainer = document.querySelector(".date-container");
