@@ -33,3 +33,19 @@ const monthNames = [
 function formatTime(){
   return time < 10 ? "0" + time : time;
 }
+
+function updateClock(){
+  const today = new Date();
+ 
+  let date = today.getDate();
+
+  let day = weekDays[today.getDay()]
+
+  let month = monthNames[today.getMonth()]
+
+  console.log(day,month);
+  console.log(today.getDay(),today.getMonth());
+
+let hours = formatTime(today.getHours());
+}
+updateClock();
