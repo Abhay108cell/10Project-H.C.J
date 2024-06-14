@@ -43,9 +43,19 @@ function updateClock(){
 
   let month = monthNames[today.getMonth()]
 
-  console.log(day,month);
-  console.log(today.getDay(),today.getMonth());
+  // console.log(day,month);
+  // console.log(today.getDay(),today.getMonth());
 
 let hours = formatTime(today.getHours());
+let minutes = formatTime(today.getMinutes());
+let seconds =  formatTime(today.getSeconds());
+
+dateContainer.innerHTML = `<p>${day}</p><p><span>${date}</span></p><p>${month}</p>`;
+
+hoursContainer.textContent = hours + ":";
+minutesContainer.textContent = minutes + ":";
+secondsContainer.textContent = seconds + ":";
+
 }
-updateClock();
+
+setInterval(updateClock,1000)
