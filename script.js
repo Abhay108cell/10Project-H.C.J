@@ -27,3 +27,9 @@ const monthNames = [
   "November",
   "December"
 ];
+
+
+
+function formatTime(){
+  return time < 10 ? "0" + time : time;
+}
