@@ -37,5 +37,27 @@ input[type="text"]{
 input[type="text"]:focus{
   border-color: #d85f83;
   outline: none;
-  
+
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: #f50057;
+
+}
+
+#result{
+  font-size: 18px;
+  margin-top: 20px;
+
 }
