@@ -3,3 +3,7 @@
   margin: 0;
   font-family:  Helvetica, sans-serif;
 }
+
+body{
+  background: linear-gradient(to right, #aa7e66 ,#feb47b);
+}
