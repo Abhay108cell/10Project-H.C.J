@@ -1,6 +1,11 @@
 function calculateAge(){
   const today = new Date();
-  const birthdateInput = document.getElementById("birthDate");
+  const birthdateInput = document.getElementById("birthDate").value;
+  const birthDateParts = birthdateInput.split("-")
+
+console.log(birthdateInput);
+console.log(birthDateParts);
+
 }
 
 
