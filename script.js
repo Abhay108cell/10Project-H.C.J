@@ -22,6 +22,22 @@ console.log(birthYear);
 if(!isValidDate(birthDate)){
   alert("Invaild Date Format : please Enter a valid Date in DD-MM-YYYY Format.")
 }
+
+const ageInMiliSeconds = today - birthDate;
+const ageInSeconds = Math.floor(ageInMiliSeconds/1000);
+const ageInMinutes = Math.floor(ageInSeconds/60);
+const ageInHours = Math.floor(ageInMinutes/60);
+const ageInDays = Math.floor(ageInHours/24);
+const ageInWeeks= Math.floor(ageInDays/7);
+const ageInMonth = Math.floor(ageInDays/30.436875);
+const ageInYears = Math.floor(ageInDays/365.25);
+
+
+
+
+
+
+
 }
 
 
