@@ -14,8 +14,14 @@ console.log(birthDay);
 console.log(birthMonth);
 console.log(birthYear);
 
-
-
+// const isValidDate = (date) =>{
+//   return(
+//     Object.prototype.toString.call(date) === ["object Date"] && !isNaN(date)
+// );
+// }
+if(!isValidDate(birthDate)){
+  alert("Invaild Date Format : please Enter a valid Date in DD-MM-YYYY Format.")
+}
 }
 
 
