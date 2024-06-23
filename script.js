@@ -37,8 +37,13 @@ function calculateAge() {
   const resultContainer = document.getElementById("resultContainer");
   const result = document.getElementById("result");
 
-result.innerHTML = ``
-
+result.innerHTML = `
+<div class="result-item">
+<h3>Age:</h3>
+<p>${ageInYears} ${ageInMonth % 12} months${ageInDays % 30} days</p>
+</div>
+`;
+resultContainer.style.display = "block";
 }
 
 const ageCalculatorForm = document.getElementById("ageCalculator");
