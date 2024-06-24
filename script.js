@@ -40,7 +40,37 @@ function calculateAge() {
 result.innerHTML = `
 <div class="result-item">
 <h3>Age:</h3>
-<p>${ageInYears} ${ageInMonth % 12} months${ageInDays % 30} days</p>
+<p>${ageInYears} years ${ageInMonth % 12} months${ageInDays % 30} days</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Months passed:</h3>
+<p>${ageInMonth}</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Weeks passed:</h3>
+<p>${ageInWeeks}</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Days passed:</h3>
+<p>${ageInDays}</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Hours passed:</h3>
+<p>${ageInHours}</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Seconds passed:</h3>
+<p>${ageInSeconds}</p>
+</div>
+`;
+`<div class="result-item">
+<h3>Months passed:</h3>
+<p>${ageInMonth}</p>
 </div>
 `;
 resultContainer.style.display = "block";
